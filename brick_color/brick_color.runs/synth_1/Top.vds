@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Nov 20 16:04:07 2026
+# Process ID: 608
+# Current directory: C:/Users/28710602/Downloads/brick_color/brick_color.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/28710602/Downloads/brick_color/brick_color.runs/synth_1/Top.vds
+# Journal file: C:/Users/28710602/Downloads/brick_color/brick_color.runs/synth_1\vivado.jou
+# Running On: SE106-04, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 16851 MB
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4892
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1417.188 ; gain = 440.207
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-10097] type error near red ; current type std_logic_vector; expected type std_logic [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:50]
+ERROR: [Synth 8-10097] type error near green ; current type std_logic_vector; expected type std_logic [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:51]
+ERROR: [Synth 8-10097] type error near blue ; current type std_logic_vector; expected type std_logic [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:52]
+ERROR: [Synth 8-10097] type error near vga_red ; current type std_logic_vector; expected type std_logic [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:53]
+ERROR: [Synth 8-10097] type error near vga_green ; current type std_logic_vector; expected type std_logic [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:54]
+ERROR: [Synth 8-10097] type error near vga_blue ; current type std_logic_vector; expected type std_logic [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:55]
+INFO: [Synth 8-11252] unit 'behavioral' is ignored due to previous errors [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:64]
+INFO: [Synth 8-10443] VHDL file 'C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd' is ignored due to errors
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Top' (0#1) [C:/Users/28710602/Downloads/brick_color/brick_color.srcs/sources_1/imports/TACHE_1/Top.vhd:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1523.402 ; gain = 546.422
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 0 Warnings, 0 Critical Warnings and 7 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 20 16:04:20 2026...
